@@ -24,4 +24,17 @@ public class ConjuntoConvidados {
         }
         convidadoSet.remove(convidadoParaRemover);
     }
+
+    public int contarConvidados() {
+        return convidadoSet.size();
+    }
+
+    public void exibirConvidados() {
+        System.out.println(convidadoSet);
+    }
+
+    public static void main(String[] args) {
+        ConjuntoConvidados conjuntoConvidados = new ConjuntoConvidados();
+        System.out.println("Existem " + conjuntoConvidados.contarConvidados() + " convidados(s) dentro do Set de Convidados");
+    }
 }
